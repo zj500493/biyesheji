@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/register.css" />
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+	<body>
+		<div>
+			<div class="head">
+				<div class="title">
+				    <h2>登录</h2>
+				</div>
+				  <div class="register-link pointer">
+				<a href="/register">新用户？使用学号邮箱注册</a>
+				</div>
+			</div>
+			<div class="login column">
+				<form role="form" id="login-form" method="post" data-remote="true" action="/login_ajax" novalidate="">
+					<ul class="inp_list">
+						<li class="field-id cf" id="field-id">
+				        	<div class="id-block block cf">
+								<input class="ui input fl block" id="id" type="text" name="username" placeholder="邮箱，学号或工号" data-complete="">
+							</div>
+						</li>
+						<li class="field-password" id="field-password">
+			            	<input class="ui input block" id="password" type="password" name="password" placeholder="密码，6~12位字母或数字">
+						</li>
+						<li class="field-ident" id="field-ident" style="display:none">
+			            	<input class="ui input block" id="ident" type="text" name="validate" placeholder="验证码">
+							<a href="javascript:" title="">
+		                        <img onclick="this.setAttribute('src','/validate_image/?r='+Math.random());" src="/validate_image/" alt="验证码>图片">
+							</a>
+						</li>
+					</ul>
+					<div class="remember_forget">
+						<div class="remember_me">									       
+							<input type="checkbox" class="check" name="remember" value="1" id="remember">
+			                <label for="remember" class="text">自动登录</label>
+						</div>
+						<div class="forget">					
+			                <a href="/password_reset/" title="忘记密码" id="forget">忘记密码？</a>
+						</div>
+			            <p id="err_msg"> </p>
+					</div>
+					<div class="submit">
+			            <a id="sub_btn" class="button xy_sub color_p_btn" href="javascript:" title="">立即登录</a>
+					</div>
+				</form>
+		</div>
+		</div>
+	</body>
+</html>

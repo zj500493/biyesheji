@@ -1,0 +1,54 @@
+.remember_forget {
+  margin-top: 20px;
+  width: 402px;
+  font-size: 14px;
+}
+.column .remember_me {
+  display: inline-block;
+  width: 80px;
+}
+.column .remember_me .check {
+  border: 0px;
+  /*display: inline-block;*/
+ float: left;
+}
+.check{
+  width: 16px;
+  height: 16px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  vertical-align: middle;
+  background: #fff;
+  border: 1px solid #b1b1b1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.login .remember_me .text{
+  float: left;
+}
+.column .forget {
+  display: inline-block;
+  float: right;
+}
+#err_msg{
+  color: red;
+  padding-top: 10px;
+  font-size: 1.1666em;
+  display: none;
+}
+.login .submit {
+  margin-top: 30px;
+  width: 140px;
+  height: 40px;
+  border-radius: 3px;
+  background: #A70000;
+  line-height: 40px;
+}
+.login .submit a {
+  display: block;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+}

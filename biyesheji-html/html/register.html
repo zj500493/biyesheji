@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="reg">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/register.css" />
+	</head>
+	<body>
+		<div id="register-chorse">
+			<!--选择注册类型-->
+			<div class="select-type" style="display: block">
+				<div class="head">
+					<div class="title">
+			            <h2>注册</h2>
+					</div>
+					<div class="pointer">
+			            <a href="/login">已有账号？立即登录</a>
+					</div>
+				</div>
+				<div class="steps-bar">
+					<div class="steps color_c">
+			            <span class="num" style="display: none;">1.</span>我的角色
+					</div>
+					<div class="steps">
+			            <span class="num">2.</span>填写资料
+					</div>
+					<div class="step3">
+			            <span class="num">3.</span>激活登录
+					</div>
+				</div>
+				<div class="chose-role cf">
+					<div class="role student">
+						<img class="image-role" src="img/register/student.png">
+			            <div class="words-role">我要学习</div>
+						<div class="describe-role">
+			                <p>选课、听课</p>
+			                <p>获得课程反馈、成为助教</p>
+						</div>
+			            <a id="go_student" class="button xy_sub submit color_p_btn" href="##">去注册</a>
+			     	</div>
+					<div class="role teacher">
+						<img class="image-role" src="img/register/teacher.png">
+			            <div class="words-role">我是老师</div>
+						<div class="describe-role">
+			                <p>开课、发布</p>
+			                <p>获得课程反馈</p>
+						</div>
+			            <a id="go_teacher" class="button xy_sub submit color_p_btn" href="javascript:">去注册</a>
+			    	</div>
+				</div>
+			</div>
+			<!--学生注册-->
+			<div class="xy_student" style="display: none ;">
+				<div class="head">
+					<div class="title">
+			            <h2>注册</h2>
+					</div>
+					<div class="register-link pointer">
+			            <a href="/login">已有账号？立即登录</a>
+					</div>
+				</div>
+				<div class="steps-bar">
+					<div class="steps color_c">
+			            <span class="num" style="display: none;">1.</span>我要学习
+					</div>
+					<div class="steps color_c">
+			            <span class="num" style="display: none;">2.</span>填写资料
+					</div>
+					<div class="step3">
+			            <span class="num">3.</span>激活登录
+					</div>
+				</div>
+				<div class="login column">
+					<form role="form" id="login-form_s" method="post" data-remote="true" action="/create_account" novalidate="">
+						<ul class="inp_list">
+							<li class="field-id cf" id="field-id">
+								<div class="id-block cf">
+			                        <input class="ui input fl block xuehao_email" id="id" type="text" name="email" placeholder="邮箱" data-complete="">
+								</div>
+							</li>
+							<li class="field-password" id="field-password">
+			                <input class="ui input block" id="password" type="password" name="password" placeholder="密码，6~12位字母或数字">
+							</li>
+							<li class="field-password-conf" id="field-password-conf">
+			                <input class="ui input block" id="password-conf" type="password" name="repassword" placeholder="确认密码">
+							</li>
+			
+							<input type="hidden" name="terms_of_service" value="true">
+							<input type="hidden" name="honor_code" value="true">
+							<input type="hidden" name="role" value="0">
+			
+						</ul>
+						<p id="err_msg_s" class="err_msg"></p>
+						<div class="submit">
+			                <a id="sub_btn_s" class="button next color_p_btn xy_sub" href="javascript:" title="">下一步</a>
+						</div>
+					</form>
+				</div>
+			    <div class="before"><a id="prev_xy" href="##">上一步</a></div>
+			</div>
+			<!--教师注册-->
+			<div class="xy_teacher" style="display: none;">
+				<div class="head">
+					<div class="title">
+			            <h2>注册</h2>
+					</div>
+					<div class="register-link pointer">
+			            <a href="/login">已有账号？立即登录</a>
+					</div>
+				</div>
+				<div class="steps-bar">
+					<div class="steps color_c">
+			            <span class="num" style="display: none;">1.</span>我是老师
+					</div>
+					<div class="steps color_c">
+			            <span class="num" style="display: none;">2.</span>填写资料
+					</div>
+					<div class="step3">
+			            <span class="num">3.</span>激活登录
+					</div>
+				</div>
+				<div class="login column" style="padding-bottom:0">
+					<form role="form" id="login-form_t" method="post" data-remote="true" action="/create_account" novalidate="">
+						<ul class="inp_list">
+							<li class="field-id cf" id="field-id">
+							<div class="id-block cf">
+			                    <input class="ui input fl block xuehao_email" type="text" name="email" id="id" placeholder="邮箱" data-complete="">
+								<!--<span>输入不正确</span>-->
+							</div>
+							</li>
+							<li class="field-password" id="field-password">
+			                <input class="ui input block" id="password" type="password" name="password" placeholder="密码，6~12位字母或数字">
+							</li>
+							<li class="field-password-conf" id="field-password-conf">
+			                <input class="ui input block" id="password-conf" type="password" name="repassword" placeholder="确认密码">
+							</li>
+							<li class="field-name cf" id="field-name">
+			                    <input class="ui input block" id="name" type="text" name="name" style="width:390px;" placeholder="姓名">
+							</li>
+							<li class="field-phone" id="field-phone">
+			                <input class="ui input block" id="phone" type="text" name="mobile" placeholder="联系电话">
+							</li>
+			
+							<input type="hidden" name="terms_of_service" value="true">
+							<input type="hidden" name="honor_code" value="true">
+							<input type="hidden" name="role" value="1">
+						</ul>
+						<p id="err_msg_t" class="err_msg"></p>
+						<div class="submit">
+			                <a id="sub_btn_t" href="javascript:" title="" class="button next color_p_btn xy_sub">下一步</a>
+						</div>
+					</form>
+				</div>
+    			<div class="before"><a id="prev_xy1" href="javascript:">上一步</a></div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/register.js" ></script>
+</html>

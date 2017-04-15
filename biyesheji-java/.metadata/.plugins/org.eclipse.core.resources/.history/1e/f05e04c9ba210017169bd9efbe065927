@@ -1,0 +1,17 @@
+package com.dao;
+
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import com.javabean.User;
+
+public class UserDao {
+	public User findByUserName(String userName) throws ClassNotFoundException{
+		User user = null;
+		public String url = "jdbc:mysql://localhost:3306/biyesheji";
+		
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection conn = DriverManager.getConnection(url, root, password)
+		return user;
+	}
+}

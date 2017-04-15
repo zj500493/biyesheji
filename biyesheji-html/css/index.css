@@ -1,0 +1,104 @@
+
+/*banner*/
+#banner{width: 100%;height: 450px;}
+#banner img{width:100%;height: 450px;}
+/*内容部分*/
+	/*分类*/
+#section{width: 100%;height:auto;background: #F2F2F2;}
+#section:after{clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
+#section .wrap{width: 90%;margin: 0 auto;padding-top:50px ;}
+#section .wrap_content{width:1104px;height: 117px;border: 1px solid #DDDDDD;background:#fff;margin: 0 auto;border-radius:10px ;}
+#section .wrap_in{padding: 15px 20px;}
+#section .wi{height: 40px;}
+#section .wi li{float: left;margin-left: 20px;}
+#section .wi .first{margin-left: 0;}
+#section .wi h2{font-weight: normal;font-size: 15px;padding: 5px 3px;background: #F2F2F2;line-height: 25px;}
+#section .wi a{display:inline-block;font-size: 15px;padding: 5px 3px;}
+#section .wi a.active{color: #A70000;}
+#section .wrap_in_f1{padding-bottom:5px ;border-bottom: 1px solid #F2F2F2;}
+#section .wrap_in_f2{padding-top: 5px;}
+	/*课程模式选择*/
+#section .content{width: 1104px;margin: 0 auto;padding: 30px;background: #F2F2F2;}
+#section .model_switch{float: right;height: 35px;}
+#section .model_switch{height: 40px;}
+#section .model_switch li{float: left;width: 45px;height: 30px;line-height:30px;cursor:pointer;border: 1px solid #ddd;}
+#section .model_switch li.active{color: #A70000;}
+	/*课程列表*/
+#section .model{padding-top:40px ;}
+#section .model1{display: none;}
+#section .model1 li{width: 262px;height: 330px;margin-right:18px ;margin-top: 15px;background: #fff;float: left;}
+#section .model1 li:nth-child(4n){margin-right: 0px;}
+#section .model1 .list_detail{height:300px;padding: 15px;border: 1px solid #ddd;}
+#section .model1 a{display: inline-block; width: 230px;height: 200px;}
+#section .model1 img{display:inline-block;width: 230px;height: 156px;}
+#section .model1 h2{font-size: 18px;font-weight: normal;height: 24px;padding: 10px 0;}
+#section .model1 .mcenter{width: 60px;height: 26px;padding: 0 5px;}
+#section .model1 .mcenter span{display: inline-block;padding: 5px 8px;background: #A70000;}
+#section .model1 .blank {width: 230px;height: 40px;}
+#section .model1 .mbottom{width: 230px;height: 22px;}
+#section .model1 .mbottom .person{float: left;}
+#section .model1 .mbottom .time{float: right;}
+#section .model1 .mbottom em{font-style: normal;}
+/*课程详情*/
+#section .model2{width: 100%;}
+#section .detail{width: 100%;height: 166px;padding:10px;background: #FFFFFF;}
+#section .detail .left{float: left;width: 260px;height: 165px;}
+#section .detail .left img{width: 100%;height: 100%;}
+
+#section .detail .right{float: left;margin-left: 20px;}
+#section .right .title a{display: block;float: left;}
+#section .title span{float: left;display: block;margin-left: 20px;padding: 5px 20px;background: #F5F5F5;color: #999;margin-top: 5px;}
+#section .title span.active{background: #A70000;color: #FFFFFF;}
+#section .detail .person{margin-top: 10px;}
+#section .detail .img{width: 32px;height: 32px;float: left;}
+#section .detail .person img{width: 100%;height: 100%;border-radius: 100%;}
+#section .detail .name{float: left;margin-left: 20px;}
+#section .detail .name span{display: inline-block;line-height: 32px;}
+#section .txt_all{height: 40px;width: 792px;margin-top: 10px;}
+#section .ref_info{margin-top: 10px;}
+#section .rione {margin-right: 25px;}
+#section .fl .fontone{margin-right: 10px;}
+	/*分页*/
+#section .page{width: 1104px;height:103px;margin: 0 auto;}
+#section .page a.current{color: #666666;}
+#section .page a.change_color{background: #A70000;color:#FFFFFF}
+
+
+/*登录注册部分*/
+#cover {
+	width: 100%;
+	height: 100%;
+	background: #999999;
+	opacity: 0.5;
+	filter: alpha(opacity:50);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+#cover_main{
+	width: 816px;
+	height: 560px;
+	border: 10px solid #999999;
+	margin: 10px auto;
+	border-radius: 10px;
+	background: #FFFFFF;
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	margin-left: -405px;
+}
+#cover_login{
+	width: 816px;
+	height: 378px;
+	border: 10px solid #999999;
+	margin: 10px auto;
+	border-radius: 10px;
+	background: #FFFFFF;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -405px;
+	margin-top: -189px;
+}
+
+
